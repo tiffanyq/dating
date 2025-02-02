@@ -90,15 +90,15 @@ const q_images = {
 };
 
 const q_descriptions = {
-q1: "You could barely sleep last night. You went on a fourth date a few days ago and \
-sense a rejection text coming any moment now.<br/><br/>\
-They've finally texted you back. You hold your breath.<br/><br/>\
+q1: "You slept poorly last night. You went on a fourth date a few days ago and \
+sense a rejection coming any moment now.<br/><br/>\
+You flip your phone over. They've finally texted you back. You hold your breath.<br/><br/>\
 <i>\"Yay I'm glad the concert was fun!\"<br/>\
 \"Also I've been thinking about this and...\"<br/><br/></i>\
-You hadn't even saved this number yet but you'd started thinking about the memories ahead. \
-Why did you let yourself hope? This hurts. Still, you pull yourself together and text back promptly, ending your reply with:",
+You hadn't even saved this number and yet you'd imagined the memories ahead. \
+Why did you let yourself hope? This hurts. Still, you text back promptly, ending your reply with:",
 q2: "You won't let this stop your morning run. \
-One problem: today is a long overdue laundry day. You're out of clean clothes. What do you wear?",
+One problem: you're out of clean clothes. What do you wear?",
 q3: "It's like, what, 7:15AM? Who could you possibly see at this time?<br/><br/>\
 You listen to the same song on repeat and let it carry you through the miles. The act of running right now feels like you're:",
 q4: "You pass the park where you first met fourth-date-person. \
@@ -136,9 +136,9 @@ Actually...maybe let's just start with a single photo. What photo is flattering 
 q9: "You update the photo and then swipe aimlessly. \
 Maybe you don't know what you want. Or maybe you want the wrong things? Are you...the problem?<br/><br/>\
 You open your laptop and your photos app sends you a notification. <i>You have a new memory.</i> \
-It's your ex and your friends at the same park where you first met fourth-date-person. \
+It's your ex and your friends at fourth-date-person park. \
 Okay! Let's take our mind elsewhere. <br/><br/>\
-Your video recommendations have gradually been shifting toward dating advice. \
+Your video recommendations have shifted toward dating advice. \
 You're not sure what this is doing to your psyche. The video drawing you in today is:",
 q10: "You watch the video on 2x speed and now your laundry is done! \
 While emptying the dryer lint trap, you find a ball of fluff that looks like a mouse. \
@@ -165,7 +165,7 @@ You order a coffee. Pouring in milk at the counter, you lock eyes with a bear-sh
 The bear stares at you, offering you the world.<br/><br/>\
 Is this...the love of your life?",
 q13: "You start dreaming of your sweet, sweet future with Honey Bear. \
-Before you get to the part where you do a surprise proposal, your friend taps your shoulder and greets you.<br/><br/>\
+Before you visualize your wedding dance, your friend taps your shoulder and greets you.<br/><br/>\
 Your friend asks how dating has been going. It's been going! And it's been scary. Right now, the biggest fear is:",
 q14: "Your friend tells you, earnestly and lovingly, after hearing you met the last person through a dating app, \
 that you should try meeting people 'in real life' instead.<br/><br/>\
@@ -201,7 +201,7 @@ q20: {
 q21: "Finally, you return home. How did you feel about dinner?",
 q22: "Big day! You're proud of yourself for getting through it. One step at a time.<br/><br/>\
 Fourth-date-person hasn't texted you. Of course they haven't. \
-But you've been through this before, and you know it will hurt, but you also know this will pass. \
+But you've been through this before, and you know that though this will hurt, this will eventually pass. \
 It feels contradictory, but you have this sinking feeling that everything will be okay.<br/><br/>\
 This thought brings you comfort before you sleep:"
 }; 

@@ -22,16 +22,21 @@ video {
 }
 
 #credits {
-  padding: 0.6em 1.8em;
+  padding: 0.4em 0.8em;
   z-index: 2;
-  width: 340px;
-  font-size: 14px;
+  width: 356px;
 }
 
-.img-container, .share-button-container {
+.img-container, .share-button-container, .controls-container {
 display: flex;
 justify-content: center;
 flex-direction: row;
+}
+
+.controls-container {
+  align-items: center;
+  margin-bottom: 8px;
+  justify-content: space-between;
 }
 
 .start-img {
@@ -45,7 +50,8 @@ h2 {
 }
 
 a {
-  color: #004172;
+  color: #003391;
+  font-weight: 600;
 }
 
 img {
@@ -73,7 +79,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 64px;
+  margin-top: 24px;
 }
 
 #quiz-container {
@@ -96,9 +102,12 @@ body {
 }
 
 #counter {
-  color: #282828;
+  color: #003391;
   margin-left: 28px;
+  margin-top: 2px;
   font-weight: 600;
+  font-size: 20px;
+  visibility: hidden;
 }
 
 .instruction-text {
@@ -122,6 +131,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
+  color: #003391;
 }
 .didnt-meet-button {
   color:#727272;
@@ -205,11 +215,13 @@ h3 {
 }
 
 #music-button {
-  padding: 8px 10px;
-  }
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+}
 
 #music-button span {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #quiz-play, #quiz-end-results {
@@ -229,10 +241,6 @@ h3 {
 #quiz-end-results img {
   width: 160px;
   margin-bottom: 0;
-}
-
-#counter {
-  visibility: hidden;
 }
 
 #share-link-button {

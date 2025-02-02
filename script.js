@@ -200,7 +200,7 @@ function advanceToNextQuestion(e) {
     changeQuestion(responseId);
   }
   // scroll to top
-  window.scrollTo(0, 0);
+  window.scrollTo(0,0);
 }
 
 function endQuiz() {
