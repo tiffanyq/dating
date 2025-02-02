@@ -886,7 +886,7 @@ const result_profiles = {
 		img: "brownsquare.png",
 		alt: "A cartoon brown square",
 		attr1: "Should wash their water bottle",
-		attr2: "Too many keychains and not enough items to hang them on",
+		attr2: "Too many keychains, not enough items to hang them on",
 		attr3: "Can't commit to a favorite color but willing to jump into a relationship as soon as something feels promising",
 		how: "Going on a hike with a friend's friends. One of them is especially attentive when you talk at length about your latest thoughts 💘",
 		miss: "Not talking to the person you make eye contact with at the grocery store 3 times in the same visit 😢"

@@ -35,7 +35,7 @@ window.addEventListener("load", function(event) {
 });
 
 async function copyToClipboard() {
-  const str = "How will you meet the love of your life? Find out at " + BASE_URL;
+  const str = "How will you meet the love of your life? Find out: " + BASE_URL;
     try {
       await navigator.clipboard.writeText(str);
       updateShareButton(true, "copied to clipboard!")
