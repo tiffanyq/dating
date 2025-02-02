@@ -227,7 +227,7 @@ function endQuiz() {
 
   // switch screens
   const c = document.getElementById("counter");
-  c.style.display = "none";
+  c.style.visibility = "hidden";
   const quizScreen = document.getElementById("quiz-play")
   const resultsScreen = document.getElementById("quiz-end-results");
   const nextButton = document.getElementById("next-button");

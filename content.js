@@ -819,7 +819,7 @@ const result_profiles = {
 		name: "Orange Circle",
 		img: "orangecircle.png",
 		alt: "A cartoon orange circle",
-		attr1: "Notices when the walls at work get painted a slightly lighter shade of white",
+		attr1: "Notices when the walls get painted a slightly lighter shade of white",
 		attr2: "Doesn't order the thing on the menu if they don't know how to pronounce it",
 		attr3: "Knows exactly what the internet would think about their current romantic situation",
 		how: "Changing your dating app location while travelling actually works out 💘",
@@ -833,7 +833,7 @@ const result_profiles = {
 		attr1: "Formats spreadsheets so the text wraps",
 		attr2: "So many subscriptions",
 		attr3: "Their friends are like  'you've been dating this person for 2 years and this is the first I'm hearing of them??'",
-		how: "You've known of this person for years but don't know them well. Finally, you end up in the same car as them for an hour long drive and you enjoy their company 💘",
+		how: "You've known of this person for years but don't know them well. Finally, you both end up in the same car for a long drive and enjoy each other's company 💘",
 		miss: "Your friend's friend shows interest but it feels too close to home 😢"
 	},
 	rin: {
@@ -843,9 +843,9 @@ const result_profiles = {
 		alt: "A cartoon pink triangle",
 		attr1: "Camera roll overflowing with screenshots to send to friends",
 		attr2: "Looks out at the rolling hills and thinks everything is going to be ok",
-		attr3: "Gifts a croissant on the second date because they were just at a bakery but then feels bad for not checking for food allergies and says no pressure to actually eat this",
-		how: "You're on a five-hour train ride and the person sitting next to you is reading the same book you're reading right now. You take your book out of your bag and start reading conspicuously. Eventually the other person notices and comments on this coincidence 💘",
-		miss: "You meet someone at an event and exchange numbers. They don't text you and you think you may as well not initiate if they're not interested 😢"
+		attr3: "Gifts a croissant on the second date but feels bad for not checking for food allergies and says no pressure to actually eat this",
+		how: "The person next to you on the train is reading the same book you're reading right now. You take your copy out and read conspicuously. They notice and comment on this coincidence 💘",
+		miss: "You meet someone at an event. They don't text you and you think you may as well not initiate if they're not interested 😢"
 	},
 	ars: {
 		when: "they get your jokes",
