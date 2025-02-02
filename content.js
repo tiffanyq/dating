@@ -855,8 +855,8 @@ const result_profiles = {
 		attr1: "Great soup recipes with adjustable macros",
 		attr2: "On principle, bed is either always made or never made",
 		attr3: "After meeting someone and feeling excited about the connection, spends the evening asking why 100 times until an acceptable logical answer is found",
-		how: "Someone DMs your hobby account. You meet up after a week of in-depth discussion about your shared interest 💘",
-		miss: "Too busy solving a puzzle at the museum. You don't notice the person next to you, equally as focused but on a different puzzle 😢"		
+		how: "Someone DMs your hobby account. You meet up after a week of discussion about your shared interest 💘",
+		miss: "So relieved after solving a puzzle at the museum with a stranger that you don't stay longer to talk to them 😢"
 	},
 	arn: {
 		when: "the world feels brighter",
