@@ -38,9 +38,9 @@ async function copyToClipboard() {
   const str = "How will you meet the love of your life? Find out: " + BASE_URL;
     try {
       await navigator.clipboard.writeText(str);
-      updateShareButton(true, "copied to clipboard!")
+      updateShareButton(true, "Copied link to clipboard!")
     } catch (err) {
-      updateShareButton(false, "copying failed, please try again");
+      updateShareButton(false, "Copying link failed, please try again");
     }
 }
 
