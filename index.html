@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>dating quiz</title>
+    <meta property="og:title" content="guess the details">
+    <meta property="og:description" content="See who can guess the details of your life.">
+    <meta property="og:image" content="img/details.png">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CKTE040CTT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CKTE040CTT');
+  </script>
+  <body>
+    <div id="body-container">
+        <video id="video-background" playsinline autoplay muted loop>
+            <source src="background.mp4" type="video/mp4">
+        </video>
+        <div id="controls">
+          <button id="music-button" aria-label="turn music on">
+              <span class="material-symbols-outlined">
+                  music_off
+                  </span>
+                  <span id="">turn music on</span>
+          </button>
+        </div>
+      <div id="quiz-container">
+          <div id="counter" class="fade-three"><span id="count-number">0</span>/22</div>
+        <div id="quiz">
+          <div id = "quiz-start">
+            <h2 class="fade-zero">How will you meet the love of your life?</h2>
+            <span class="img-container">
+                <img class="start-img" src="img/loml.png" alt="A blob with heart eyes."/>
+            </span>
+            <br>
+            <div class="instruction-text fade-one">              <span class="material-symbols-outlined">
+                music_note
+                </span>please turn music on!! :)</div>
+                <br/>
+            <button id="start-button"><span class="fade-static-two">Start</span></button>
+          </div> <!-- end of quiz start -->
+          <div id = "quiz-play">
+            <p id = "q-description" class="question-text"></p>
+            <span class="img-container">
+              <img id = "q-image"/>
+            </span>
+            <div id="choice-container"></div> <!-- options get populated -->
+          </div>
+          <div id = "quiz-end-results">
+            <h2 class="fade-zero"></h2>
+            <div id="profile">
+              <p class="small-title">YOU'LL KNOW WHEN:</p>
+              <p class="fade-zero" id="youll-know-when"></p>
+              <div class="img-container">
+                <img class="fade-zero" id="profile-img" src=""></img>
+              </div>
+              <h3 id="profile-name"></h3>
+              <ul class="fade-one">
+                <li id="profile-attribute-1"></li>
+                <li id="profile-attribute-2"></li>
+                <li id="profile-attribute-3"></li>
+              </ul>
+              <h3>❣️ How it will happen</h3>
+             <div class="fade-two" id="profile-how"></div>
+             <h3>💔 Missed connection</h3> 
+             <div class="fade-one" id="profile-miss"></div>
+              </div>
+              <div class="share-button-container">
+                <button id="share-button">💌 Copy and share this link</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </div> <!-- end of body container -->
+    <div id="outside-quiz">
+      <div id="credits" class="credits-element">
+        <p class="credits-element">&hearts; by <a class="credits-element" href="https://www.instagram.com/anotherbrowsertab" target="_blank">@anotherbrowsertab</a> | music <a href="https://www.instagram.com/2kaimusic/" target="_blank">@2kaimusic</a> &hearts;</p>
+      </div>
+    </div>
+  </div>
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>

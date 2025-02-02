@@ -1,0 +1,299 @@
+html {
+  touch-action: manipulation;
+}
+
+video {
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#controls {
+  position: absolute;
+  top: -48px;
+  right: 24px;
+}
+
+#credits {
+  padding: 0.6em 1.8em;
+  z-index: 2;
+  width: 340px;
+  font-size: 14px;
+}
+
+.img-container, .share-button-container {
+display: flex;
+justify-content: center;
+flex-direction: row;
+}
+
+.start-img {
+  width: 340px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+a {
+  color: #004172;
+}
+
+img {
+  width: 340px;
+  margin-bottom: 16px;
+}
+
+body, button, input {
+  font-family: "Outfit", serif;
+  font-size: 16px;
+  color: #282828;
+}
+
+body {
+  font-size: 16px;
+  line-height: 24px;
+  color: #282828;
+  background-color: rgb(255, 236, 253);
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+}
+
+#quiz-container {
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  z-index: 1;
+}
+#quiz {
+  border: 1px solid #b4b4b4;
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 340px;
+  padding: 1.4em 1.8em;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  transition: background-color 1s;
+  z-index: 3;
+}
+
+#counter {
+  color: #282828;
+  margin-left: 28px;
+  font-weight: 600;
+}
+
+.instruction-text {
+  font-style: italic;
+  text-align: center;
+}
+
+/* selection styling */
+.select-row {
+  display: inline-block;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background: #fff;
+  border: 1.6px solid rgb(212, 212, 212);
+  margin-right: 6px!important;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 12px 12px;
+  width: 344px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.didnt-meet-button {
+  color:#727272;
+  background-color: #d8d8d8;
+}
+
+.music-on {
+  color: #49afff;
+}
+
+.select-row:hover,#start-button:hover, #music-button:hover, #share-button:hover {
+  border: 1.6px solid #49afff;
+  cursor: pointer;
+}
+.didnt-meet-button:hover {
+  border: 1.6px solid #E8E8E8;
+  cursor: auto;
+}
+.selected-style {
+  border: 1.6px solid #49afff;
+}
+
+#header-parent {
+  width: 298px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#outside-quiz {
+  margin-bottom: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.small-title {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#youll-know-when {
+  color: #c41380;
+  margin-top: -16px;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#start-button, #music-button, #share-button, .share-button-shared {
+  padding: 8px 20px;
+  border: 1.6px solid #E8E8E8;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.share-button-shared {
+  background-color: #4ea568 !important;
+}
+
+#start-button, #share-button {
+  background-color: #c41380;
+  color: #ffffff;
+  padding: 12px 20px;
+  width: 340px;
+}
+
+#share-button {
+  margin-top: 28px;
+}
+.material-symbols-outlined {
+  vertical-align: top;
+}
+
+#music-button {
+  padding: 8px 10px;
+  }
+
+#music-button span {
+  font-size: 16px;
+}
+
+#quiz-play, #quiz-end-results {
+  display: none;
+}
+
+#counter {
+  visibility: hidden;
+}
+
+#share-link-button {
+  width: 290px;
+}
+
+#share-button {
+  width: 340px;
+  margin-left: -8px;
+}
+
+/* animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInSubtle {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideFadeInFromRight {
+	0% {
+    transform: translateX(-1%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-zero, .fade-one, .fade-two, .fade-three, .fade-four {
+	animation: 0.6s ease-out 0s 1 slideFadeInFromRight;
+	animation-fill-mode: both;
+}
+
+.fade-static-zero, .fade-static-one, .fade-static-two, .fade-static-three, .fade-static-four {
+  animation: 0.6s ease-out 0s 1 fadeIn;
+  animation-fill-mode: both;
+}
+
+.fade-static-subtle-zero, .fade-static-subtle-one, .fade-static-subtle-two, .fade-static-subtle-three, .fade-static-subtle-four {
+  animation: 1s ease-out 0s 1 fadeInSubtle;
+  animation-fill-mode: both;
+}
+
+.fade-one, .fade-static-one {
+	animation-delay: 0.2s;
+}
+
+.fade-two, .fade-static-two {
+	animation-delay: 0.4s;
+}
+
+.fade-three, .fade-static-three {
+	animation-delay: 0.6s;
+}
+
+.fade-four, .fade-static-four {
+	animation-delay: 0.8s;
+}
+
+@media (min-width: 660px) {
+  #quiz {
+    width: 560px;
+  } 
+
+  .select-row {
+    width: 564px;
+  }
+
+  #start-button, #share-button {
+    width: 560px;
+  }
+}
