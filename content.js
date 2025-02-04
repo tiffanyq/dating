@@ -166,7 +166,7 @@ The bear stares at you, offering you the world.<br/><br/>\
 Is this...the love of your life?",
 q13: "You picture your sweet, sweet future with Honey Bear. \
 Before you visualize your wedding dance, your friend taps your shoulder and greets you.<br/><br/>\
-Your friend asks how dating has been going. It's been going! And it's been scary. Right now, the biggest fear is:",
+Your friend asks how dating has been going. It's been going! The hardest part right now is:",
 q14: "Your friend tells you, earnestly and lovingly, after hearing you met the last person through a dating app, \
 that you should try meeting people 'in real life' instead.<br/><br/>\
 Your friend pauses. <i>\"I just remembered. I have this friend, Plonk, who wants to get set up. I'm not sure if it's a romantic fit, \
@@ -209,7 +209,7 @@ const q_choices = {
 	q1: {
 		choice0: {
 			text: "Hope you find what you're looking for!",
-			ra: -1,
+			ra: 1,
 			ri: 0,
 			sn: -1
 		},
@@ -227,7 +227,7 @@ const q_choices = {
 		},
 		choice3: {
 			text: "And happy new year! (It's October)",
-			ra: 1,
+			ra: -1,
 			ri: 0,
 			sn: 1
 		}
@@ -245,24 +245,24 @@ const q_choices = {
 			text: "Manually processing your feelings.",
 			ra: 0,
 			ri: 1,
-			sn: 1
+			sn: -1
 		},
 		choice1: {
 			text: "Literally running away from your problems.",
 			ra: 0,
-			ri: -1,
+			ri: 1,
 			sn: 1
 		},
 		choice2: {
 			text: "Turning your thoughts off.",
 			ra: 0,
 			ri: -1,
-			sn: -1
+			sn: 1
 		},
 		choice3: {
 			text: "Delusional. Why did you think you would enjoy running?",
 			ra: 0,
-			ri: 1,
+			ri: -1,
 			sn: -1
 		}
 	},
@@ -398,19 +398,19 @@ const q_choices = {
 	q9: {
 		choice0: {
 			text: "NO MORE SITUATIONSHIPS! 10 Rules To Change Your Life",
-			ra: -1,
-			ri: 1,
+			ra: 1,
+			ri: -1,
 			sn: 0
 		},
 		choice1: {
 			text: "CHEMISTRY or COMPATIBILITY? How do you tell the difference? (Powerful Mindset Shift)",
 			ra: -1,
-			ri: -1,
+			ri: 1,
 			sn: 0
 		},
 		choice2: {
 			text: "I'm just not into them. Can the feeling change?",
-			ra: 1,
+			ra: -1,
 			ri: 1,
 			sn: 0
 		},
@@ -426,20 +426,20 @@ const q_choices = {
 			id: 1,
 			text: "Cute!",
 			ra: -1,
-			ri: 1,
+			ri: 0,
 			sn: 0
 		},
 		choice1: {
 			id: 2,
 			text: "Message your ex",
-			ra: 1,
+			ra: -1,
 			ri: 0,
 			sn: 0
 		},
 		choice2: {
 			id: 3,
 			text: "Take a photo and upload it to your story",
-			ra: -1,
+			ra: 1,
 			ri: 0,
 			sn: 0,
 			amb: true
@@ -479,11 +479,11 @@ const q_choices = {
 		choice0: {
 			text: "How out of your control this process feels.",
 			ra: 0,
-			ri: 1,
-			sn: -1
+			ri: -1,
+			sn: 1
 		},
 		choice1: {
-			text: "What's wrong with you.",
+			text: "How much you worry about what's wrong with you.",
 			ra: 0,
 			ri: 1,
 			sn: 1
@@ -495,10 +495,10 @@ const q_choices = {
 			sn: -1
 		},
 		choice3: {
-			text: "Not trusting your judgment and self-awareness.",
+			text: "Not trusting your judgment.",
 			ra: 0,
-			ri: -1,
-			sn: 1
+			ri: 1,
+			sn: -1
 		}
 	},
 	q14: {
@@ -540,7 +540,7 @@ const q_choices = {
 			text: "Hey are you free for dinner tonight? Any time after 6 works for me. What time works best for you? Do you have any places you've been meaning to try? If not I have a list! ",
 			ra: 1,
 			ri: 0,
-			sn: 1
+			sn: -1
 		},
 		choice2: {
 			text: "din at 6 ?",
@@ -552,7 +552,7 @@ const q_choices = {
 			text: "Hey! Will you marry me? But before that, dinner?",
 			ra: 1,
 			ri: 0,
-			sn: -1
+			sn: 1
 		}
 	},
 	q17: {
