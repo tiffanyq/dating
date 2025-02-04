@@ -540,7 +540,7 @@ const q_choices = {
 			text: "Hey are you free for dinner tonight? Any time after 6 works for me. What time works best for you? Do you have any places you've been meaning to try? If not I have a list! ",
 			ra: 1,
 			ri: 0,
-			sn: -1
+			sn: 1
 		},
 		choice2: {
 			text: "din at 6 ?",
@@ -552,7 +552,7 @@ const q_choices = {
 			text: "Hey! Will you marry me? But before that, dinner?",
 			ra: 1,
 			ri: 0,
-			sn: 1
+			sn: -1
 		}
 	},
 	q17: {
