@@ -126,7 +126,7 @@ Fourth-date-person went on a work trip a couple weeks ago. \
 You'd added the city to your World Clock to know what time it was there. \
 It sounded like a hectic trip and you appreciated that they texted you every day anyway. \
 Based on the timestamps, they probably texted you back right before bed and first thing in the morning. \
-Did it mean they really liked you? Did it mean nothing to them? It was endearing in any case.<br/><br/>\
+Did it mean they really liked you? Did it mean nothing to them? In any case, it was endearing.<br/><br/>\
 You wonder how they felt when you texted them. Was it exciting? Comforting? Meaningless? Nightmare fuel?<br/><br/>\
 Anyway. It's over now, and you're not going to be on that continent any time soon. You:",
 q8: "You'll find love. \
@@ -234,7 +234,7 @@ const q_choices = {
 	},
 	q2: {
 		choice0: {
-			text: "Something you haven't washed in weeks",
+			text: "Something you haven't washed in weeks.",
 			ra: 0,
 			ri: 0,
 			sn: 0
@@ -310,7 +310,7 @@ const q_choices = {
 			sn: 0
 		},
 		choice7: {
-			text: "Laughed??",
+			text: "Laughed?",
 			ra: -1,
 			ri: 0,
 			sn: 0
@@ -319,7 +319,7 @@ const q_choices = {
 	q5: {
 		choice0: {
 			id: 1,
-			text: "Look toward them and see if they say anything",
+			text: "Look toward them and see if they say anything.",
 			ra: -1,
 			ri: 0,
 			sn: -1
@@ -341,7 +341,7 @@ const q_choices = {
 		},
 		choice3: {
 			id: 4,
-			text: "Start running",
+			text: "Start running.",
 			ra: -1,
 			ri: 0,
 			sn: 1
@@ -357,13 +357,13 @@ const q_choices = {
 	},
 	q7: {
 		choice0: {
-			text: "Delete the city",
+			text: "Delete the city—you don't need this remnant lying around.",
 			ra: 0,
 			ri: -1,
 			sn: 0
 		},
 		choice1: {
-			text: "Keep the city. This is the souvenir for your four dates",
+			text: "Keep the city—this is the souvenir for your four dates.",
 			ra: 0,
 			ri: 1,
 			sn: 0
