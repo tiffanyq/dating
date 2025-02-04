@@ -101,7 +101,7 @@ q2: "You won't let this stop your morning run. \
 One problem: you're out of clean clothes. What do you wear?",
 q3: "It's like, what, 7:15AM? Who could you possibly see at this time?<br/><br/>\
 You listen to the same song on repeat and let it carry you through the miles. The act of running right now feels like you're:",
-q4: "You pass the park where you first met fourth-date-person. \
+q4: "You run through the park where you first met fourth-date-person. \
 You wonder what you could've done differently. Was it something you said? Maybe you:",
 q5: "That was a long run!! Your weeks-unwashed clothes are soaked. \
 As you air out your armpits, you see someone walking in your direction. \
@@ -164,7 +164,7 @@ Someone's wearing a jersey for your favorite team. You're reminded of morning ru
 You order a coffee. Pouring in milk at the counter, you lock eyes with a bear-shaped honey bottle. \
 The bear stares at you, offering you the world.<br/><br/>\
 Is this...the love of your life?",
-q13: "You start dreaming of your sweet, sweet future with Honey Bear. \
+q13: "You picture your sweet, sweet future with Honey Bear. \
 Before you visualize your wedding dance, your friend taps your shoulder and greets you.<br/><br/>\
 Your friend asks how dating has been going. It's been going! And it's been scary. Right now, the biggest fear is:",
 q14: "Your friend tells you, earnestly and lovingly, after hearing you met the last person through a dating app, \
@@ -174,13 +174,13 @@ but I'll throw you two into a group chat if you're open to it?\"</i> You are, in
 Is this...the start of the rest of your life?",
 q15: "You're still riding the momentum of 'putting yourself out there' \
 and decide to ask someone to get dinner before your confidence fades.<br/><br/>\
-Hey. Why did fourth-date-person change the topic so quickly when you said you've been feeling alone in the world lately?<br/><br/>\
+Hey. Why did fourth-date-person change the topic so quickly when you said you'd been feeling alone in the world lately?<br/><br/>\
 Back to your phone. Who do you message?",
 q16: "And what do you say?",
 q17: "They respond enthusiastically. You decide on a place you've been meaning to check out. \
 Great! That's a win no matter how dinner goes.<br/><br/>\
 You get ready for the maybe-date (can't be too sure about these things). \
-You look in the mirror. \
+You look in the mirror and wonder how interesting you are. \
 You're more self-conscious than you were a few months ago. You change shirts thrice.<br/><br/>\
 Dinner awaits!",
 q18: {
@@ -220,7 +220,7 @@ const q_choices = {
 			sn: 1
 		},
 		choice2: {
-			text: "Hope you have a great time on your backpacking trip next weekend and your mom's peonies thrive this spring!",
+			text: "Hope you have a great time backpacking trip and your mom's peonies thrive this spring!",
 			ra: 1,
 			ri: 0,
 			sn: -1
@@ -409,7 +409,7 @@ const q_choices = {
 			sn: 0
 		},
 		choice2: {
-			text: "I'm just not into them. What do I do? Can the feeling change?",
+			text: "I'm just not into them. Can the feeling change?",
 			ra: 1,
 			ri: 1,
 			sn: 0
@@ -471,7 +471,8 @@ const q_choices = {
 			text: "No",
 			ra: 0,
 			ri: 0,
-			sn: -1
+			sn: -1,
+			nohoneybear: true
 		}
 	},
 	q13: {

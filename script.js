@@ -6,6 +6,7 @@ let tracking = {
   ra: 0,
   ri: 0,
   sn: 0,
+  nohoneybear: false,
   ev: false, // q5
   amb: false, // q10
   date: ""
@@ -77,7 +78,6 @@ function changeQuestion(responseId=false) { // false default, otherwise set to i
     const counter = document.getElementById("count-number");
     const description = document.getElementById("q-description");
     const questionCount = tracking.currentQuestion;
-  
     const questionNumber = "q" + questionCount;
 
     // special case for date conversation
@@ -92,6 +92,8 @@ function changeQuestion(responseId=false) { // false default, otherwise set to i
       description.innerHTML = q_descriptions[questionNumber][responseId];
     } else if (onDate()) {
       description.innerHTML = q_descriptions[questionNumber][tracking.date];
+    } else if (questionCount === 13 && tracking.nohoneybear) { // honey bear...
+      description.innerHTML = "Okay, maybe not. But why not enjoy the dream for just a moment? " + q_descriptions[questionNumber]; // innerHTML for <i><br> tags
     } else {
       description.innerHTML = q_descriptions[questionNumber]; // innerHTML for <i><br> tags
     }
@@ -128,6 +130,8 @@ function changeQuestion(responseId=false) { // false default, otherwise set to i
       if (j["ev"]) ch.setAttribute("data-ev", true);
       // for 10
       if (j["amb"]) ch.setAttribute("data-amb", true);
+      // for 12
+      if (j["nohoneybear"]) ch.setAttribute("data-nohoneybear", true);
       // special casing for date
       if (tracking.currentQuestion === 15) {
         if (j["text"] === "Ev" && !tracking.ev) {
@@ -180,6 +184,7 @@ function advanceToNextQuestion(e) {
   if (response.dataset.id) responseId = response.dataset.id;
   if (response.dataset.ev) tracking.ev = true;
   if (response.dataset.amb) tracking.amb = true;
+  if (response.dataset.nohoneybear) tracking.nohoneybear = true;
   // special case: who to go on a date with
   if (tracking.currentQuestion === 15) {
     if (response.innerText === "Ev") {
