@@ -92,23 +92,22 @@ const q_images = {
 const q_descriptions = {
 q1: "You slept poorly last night. You went on a fourth date a few days ago and \
 sense a rejection coming any moment now.<br/><br/>\
-You flip your phone over. They've finally texted you back. You hold your breath.<br/><br/>\
+You flip your phone over. They've finally texted you back.<br/><br/>\
 <i>\"Yay I'm glad the concert was fun!\"<br/>\
 \"Also I've been thinking about this and...\"<br/><br/></i>\
 You hadn't even saved this number and yet you'd imagined the memories ahead. \
-Why did you let yourself hope? This hurts. Still, you text back promptly, ending your reply with:",
+This is really too bad. Still, you text back promptly, ending your reply with:",
 q2: "You won't let this stop your morning run. \
 One problem: you're out of clean clothes. What do you wear?",
 q3: "It's like, what, 7:15AM? Who could you possibly see at this time?<br/><br/>\
-You listen to the same song on repeat and let it carry you through the miles. The act of running right now feels like you're:",
+You listen to the same song on repeat and let it carry you through the miles. The act of running right now feels:",
 q4: "You run through the park where you first met fourth-date-person. \
-You wonder what you could've done differently. Was it something you said? Maybe you:",
+You wonder what you could've done differently. Was it something you said? Maybe it ended because:",
 q5: "That was a long run!! Your weeks-unwashed clothes are soaked. \
 As you air out your armpits, you see someone walking in your direction. \
 They're wearing a shirt for your favorite football team and so is the dog they're walking. Are they looking at you? <br/><br/>\
 Is this...the moment you've been waiting for?<br/><br/>\
-The stranger looks at you again and you instinctively look away. Ahhh!! Why now?!<br/><br/>\
-They're walking past you. What now?",
+The stranger looks at you again. What now?",
 q6: {
 	1: "You look up, but they keep on walking.",
 	2: "<i>\"I hope so!\"</i><br/><br/>\
@@ -127,14 +126,12 @@ You'd added the city to your World Clock to know what time it was there. \
 It sounded like a hectic trip and you appreciated that they texted you every day anyway. \
 Based on the timestamps, they probably texted you back right before bed and first thing in the morning. \
 Did it mean they really liked you? Did it mean nothing to them? In any case, it was endearing.<br/><br/>\
-You wonder how they felt when you texted them. Was it exciting? Comforting? Meaningless? Nightmare fuel?<br/><br/>\
-Anyway. It's over now, and you're not going to be on that continent any time soon. You:",
+Anyway. It's over now. You:",
 q8: "You'll find love. \
 You just need to put yourself out there! \
 And you may as well refresh your dating profile while this motivation is around.<br/><br/>\
-Actually...maybe let's just start with a single photo. What photo is flattering but not overly flattering? You end up going with:",
-q9: "You update the photo and then swipe aimlessly. \
-Maybe you don't know what you want. Or maybe you want the wrong things? Are you...the problem?<br/><br/>\
+Actually...maybe let's just start with a single photo. You end up going with:",
+q9: "You update the photo and then swipe aimlessly. What <i>do</i> you want? <br/><br/>\
 You open your laptop and your photos app sends you a notification. <i>You have a new memory.</i> \
 It's your ex and your friends at fourth-date-person park. \
 Okay! Let's take our mind elsewhere. <br/><br/>\
@@ -151,7 +148,7 @@ q11: {
 	You upload a photo of the lint ball. <br/><br/>\
 	Minutes later, someone replies to your story. It's Amb, a friend's friend's friend who you met at a party months ago. \
 	Amb later asked your friend if you were single. This was flattering, but Amb lived a 5-hour flight away. \
-	But maybe you're too picky and need to be more open-minded?<br/><br/>\
+	But maybe you need to be more open-minded?<br/><br/>\
 	<i>\"Hey! Neat photo. What is it though? Hey so I moved to the city last month. Would love to hang out!\"</i><br/><br/>\
 	Is this...the second chance you're looking for?",
 	4: "Wow, that's very proactive of you! Good thing you know what you're doing, right?<br/><br/>\
@@ -172,16 +169,15 @@ that you should try meeting people 'in real life' instead.<br/><br/>\
 Your friend pauses. <i>\"I just remembered. I have this friend, Plonk, who wants to get set up. I'm not sure if it's a romantic fit, \
 but I'll throw you two into a group chat if you're open to it?\"</i> You are, in fact, open to it.<br/><br/>\
 Is this...the start of the rest of your life?",
-q15: "You're still riding the momentum of 'putting yourself out there' \
-and decide to ask someone to get dinner before your confidence fades.<br/><br/>\
-Hey. Why did fourth-date-person change the topic so quickly when you said you'd been feeling alone in the world lately?<br/><br/>\
+q15: "Still riding the momentum of 'putting yourself out there', \
+you decide to ask someone to get dinner before your confidence fades.<br/><br/>\
+Hey. Why did fourth-date-person change the topic so quickly when you talked about your interests?<br/><br/>\
 Back to your phone. Who do you message?",
 q16: "And what do you say?",
 q17: "They respond enthusiastically. You decide on a place you've been meaning to check out. \
 Great! That's a win no matter how dinner goes.<br/><br/>\
-You get ready for the maybe-date (can't be too sure about these things). \
-You look in the mirror and wonder how interesting you are. \
-You're more self-conscious than you were a few months ago. You change shirts thrice.<br/><br/>\
+You get ready for the maybe-date. \
+You look in the mirror and wonder how interesting you are. You change shirts thrice.<br/><br/>\
 Dinner awaits!",
 q18: {
 	ev: "<i>\"So what got you into running?\"</i>",
@@ -199,11 +195,10 @@ q20: {
 	plonk: "<i>\"If you could travel anywhere in the world, where would it be?\"</i>"	
 },
 q21: "Finally, you return home. How did you feel about dinner?",
-q22: "Big day! You're proud of yourself for getting through it. One step at a time.<br/><br/>\
+q22: "Big day!<br/><br/>\
 Fourth-date-person hasn't texted you. Of course they haven't. \
-But you've been through this before, and you know that though this will hurt, this will eventually pass. \
-It feels contradictory, but you have this sinking feeling that everything will be okay.<br/><br/>\
-This thought brings you comfort before you sleep:"
+But you've been through this before, and though it feels contradictory, you have this sinking feeling that everything will be okay.<br/><br/>\
+This thought brings peace before you sleep:"
 }; 
 const q_choices = {
 	q1: {
@@ -214,13 +209,13 @@ const q_choices = {
 			sn: -1
 		},
 		choice1: {
-			text: "Sg!",
+			text: "Sg! (That's the whole text)",
 			ra: -1,
 			ri: 0,
 			sn: 1
 		},
 		choice2: {
-			text: "Hope you have a great time backpacking trip and your mom's peonies thrive this spring!",
+			text: "Hope you have a great time on your backpacking trip and your mom's peonies thrive this spring!",
 			ra: 1,
 			ri: 0,
 			sn: -1
@@ -242,25 +237,25 @@ const q_choices = {
 	},
 	q3: {
 		choice0: {
-			text: "Manually processing your feelings.",
+			text: "Joyful. It's so nice being out here.",
 			ra: 0,
 			ri: 1,
 			sn: -1
 		},
 		choice1: {
-			text: "Literally running away from your problems.",
+			text: "Frantic. You notice you're running much faster than usual.",
 			ra: 0,
 			ri: 1,
 			sn: 1
 		},
 		choice2: {
-			text: "Turning your thoughts off.",
+			text: "Turbulent. You are literally running away from your problems right now.",
 			ra: 0,
 			ri: -1,
 			sn: 1
 		},
 		choice3: {
-			text: "Delusional. Why did you think you would enjoy running?",
+			text: "Steady. It feels good to stick to your running plans no matter what.",
 			ra: 0,
 			ri: -1,
 			sn: -1
@@ -268,50 +263,26 @@ const q_choices = {
 	},
 	q4: {
 		choice0: {
-			text: "Talked way too much about football.",
-			ra: 1,
+			text: "You talked too much about football.",
+			ra: -1,
 			ri: 0,
 			sn: 0
 		},
 		choice1: {
-			text: "Overshared about your fears.",
+			text: "You overshared about your fears.",
 			ra: 1,
 			ri: 0,
 			sn: 0
 		},
 		choice2: {
-			text: "Made jokes that didn't land the right way.",
-			ra: 1,
+			text: "Your jokes kept flying past them.",
+			ra: -1,
 			ri: 0,
 			sn: 0
 		},
 		choice3: {
-			text: "Came off pretentious when talking about your recent health kick.",
+			text: "They were too intimidated by how amazing you are.",
 			ra: 1,
-			ri: 0,
-			sn: 0
-		},
-		choice4: {
-			text: "Didn't elaborate when asked about where you grew up.",
-			ra: -1,
-			ri: 0,
-			sn: 0
-		},
-		choice5: {
-			text: "Laughed too loud.",
-			ra: -1,
-			ri: 0,
-			sn: 0
-		},
-		choice6: {
-			text: "Laughed too quietly.",
-			ra: -1,
-			ri: 0,
-			sn: 0
-		},
-		choice7: {
-			text: "Laughed?",
-			ra: -1,
 			ri: 0,
 			sn: 0
 		}
@@ -357,13 +328,13 @@ const q_choices = {
 	},
 	q7: {
 		choice0: {
-			text: "Delete the city—you don't need this remnant lying around.",
+			text: "Delete the city. Goodbye!",
 			ra: 0,
 			ri: -1,
 			sn: 0
 		},
 		choice1: {
-			text: "Keep the city—this is the souvenir for your four dates.",
+			text: "Keep the city. Why not hold on to this souvenir?",
 			ra: 0,
 			ri: 1,
 			sn: 0
@@ -397,26 +368,26 @@ const q_choices = {
 	},
 	q9: {
 		choice0: {
-			text: "NO MORE SITUATIONSHIPS! 10 Rules To Change Your Life",
-			ra: 1,
-			ri: -1,
+			text: "CHEMISTRY or COMPATIBILITY? (Powerful Mindset Shift)",
+			ra: 0,
+			ri: 1,
 			sn: 0
 		},
 		choice1: {
-			text: "CHEMISTRY or COMPATIBILITY? How do you tell the difference? (Powerful Mindset Shift)",
-			ra: -1,
+			text: "I'm just not into them. Can the feeling change?",
+			ra: 0,
 			ri: 1,
 			sn: 0
 		},
 		choice2: {
-			text: "I'm just not into them. Can the feeling change?",
-			ra: -1,
-			ri: 1,
+			text: "Do THIS to make them want you. 5 SUBTLE TIPS",
+			ra: 0,
+			ri: -1,
 			sn: 0
 		},
 		choice3: {
-			text: "Do THIS to make them want you. 5 SUBTLE TIPS",
-			ra: 1,
+			text: "Get The Treatment You Deserve (You're DONE SETTLING!)",
+			ra: 0,
 			ri: -1,
 			sn: 0
 		}
@@ -425,21 +396,21 @@ const q_choices = {
 		choice0: {
 			id: 1,
 			text: "Cute!",
-			ra: -1,
+			ra: 0,
 			ri: 0,
 			sn: 0
 		},
 		choice1: {
 			id: 2,
 			text: "Message your ex",
-			ra: -1,
+			ra: 0,
 			ri: 0,
 			sn: 0
 		},
 		choice2: {
 			id: 3,
 			text: "Take a photo and upload it to your story",
-			ra: 1,
+			ra: 0,
 			ri: 0,
 			sn: 0,
 			amb: true
@@ -447,7 +418,7 @@ const q_choices = {
 		choice3: {
 			id: 4,
 			text: "Dismantle the dryer to figure out how this happened",
-			ra: 1,
+			ra: 0,
 			ri: 0,
 			sn: 0
 		}
@@ -489,13 +460,13 @@ const q_choices = {
 			sn: 1
 		},
 		choice2: {
-			text: "How much time and energy this is taking from your life.",
+			text: "How much time this is taking from your life.",
 			ra: 0,
 			ri: -1,
 			sn: -1
 		},
 		choice3: {
-			text: "Not trusting your judgment.",
+			text: "How boring it is to have the same conversations over and over again.",
 			ra: 0,
 			ri: 1,
 			sn: -1
@@ -537,13 +508,13 @@ const q_choices = {
 			sn: 1
 		},
 		choice1: {
-			text: "Hey are you free for dinner tonight? Any time after 6 works for me. What time works best for you? Do you have any places you've been meaning to try? If not I have a list! ",
+			text: "Are you free for dinner tonight? Do you have any places you've been meaning to try? If not I have a list!",
 			ra: 1,
 			ri: 0,
 			sn: 1
 		},
 		choice2: {
-			text: "din at 6 ?",
+			text: "Din at 6?",
 			ra: -1,
 			ri: 0,
 			sn: -1
@@ -757,19 +728,19 @@ const q_choices = {
 			sn: -1
 		},
 		choice1: {
-			text: "You're not sure. You have a gut feeling, but how are you supposed to trust that? You barely know this person.",
+			text: "You're not totally sure, but you have an initial gut feeling.",
 			ra: 0,
 			ri: 1,
 			sn: 1
 		},
 		choice2: {
-			text: "You need to run this date against your holistic date checklist to know.",
+			text: "You need to evaluate this date against your checklist to know.",
 			ra: 0,
 			ri: -1,
 			sn: -1
 		},
 		choice3: {
-			text: "There's no way to know right now. It will take a while to figure out how you feel, if the other person is up for it.",
+			text: "How would you know after one date?",
 			ra: 0,
 			ri: -1,
 			sn: 1
@@ -783,7 +754,7 @@ const q_choices = {
 			sn: 0
 		},
 		choice1: {
-			text: "The possibilities make life more exciting.",
+			text: "Life is more exciting this way.",
 			ra: 1,
 			ri: 1,
 			sn: 0
@@ -795,7 +766,7 @@ const q_choices = {
 			sn: 0
 		},
 		choice3: {
-			text: "This is plot progression.",
+			text: "It just takes one.",
 			ra: 1,
 			ri: -1,
 			sn: 0
