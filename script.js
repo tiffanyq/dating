@@ -25,6 +25,7 @@ window.addEventListener("load", function(event) {
   startButton.addEventListener('click', startQuiz, false);
   musicButton.addEventListener('click', toggleMusic, false);
   shareLinkButton.addEventListener('click', copyToClipboard, false);
+  restartButton.addEventListener('click', restartQuiz, false);
 
   // add button sounds
   startButton.addEventListener('click', makeClickSound, false);
@@ -39,7 +40,7 @@ async function copyToClipboard() {
   const str = "How will you meet the love of your life? Find out: " + BASE_URL;
     try {
       await navigator.clipboard.writeText(str);
-      updateShareButton(true, "Copied link to clipboard!")
+      updateShareButton(true, "Copied link!")
     } catch (err) {
       updateShareButton(false, "Copying link failed, please try again");
     }
@@ -135,12 +136,12 @@ function changeQuestion(responseId=false) { // false default, otherwise set to i
       // special casing for date
       if (tracking.currentQuestion === 15) {
         if (j["text"] === "Ev" && !tracking.ev) {
-          ch.innerText = "Ev (didn't meet)";
+          ch.innerText = "🔒 Ev (didn't meet)";
           ch.classList.add("didnt-meet-button");
           ch.disabled = true;
         }
         if (j["text"] === "Amb" && !tracking.amb) {
-          ch.innerText = "Amb (didn't meet)";
+          ch.innerText = "🔒 Amb (didn't meet)";
           ch.classList.add("didnt-meet-button");
           ch.disabled = true;
         }
@@ -219,6 +220,8 @@ function endQuiz() {
   const attr3 = document.getElementById("profile-attribute-3");
   const profileHow = document.getElementById("profile-how");
   const profileMiss = document.getElementById("profile-miss");
+  const opposite = document.getElementById("your-opposite");
+  const oppositeImg = document.getElementById("opposite-img");
 
   youllKnowWhen.innerText = result_profiles[profile]["when"];
   profileName.innerText = result_profiles[profile]["name"];
@@ -229,6 +232,8 @@ function endQuiz() {
   attr3.innerText = result_profiles[profile]["attr3"];
   profileHow.innerText = result_profiles[profile]["how"];
   profileMiss.innerText = result_profiles[profile]["miss"];
+  opposite.innerText = result_profiles[profile]["opposite"];
+  oppositeImg.src = "img/profiles/"+result_profiles[profile]["oppositeimg"];
 
   // switch screens
   const c = document.getElementById("counter");
@@ -258,6 +263,20 @@ function computeResult() {
     resultString += "n";
   }
   return resultString;
+}
+
+function restartQuiz() {
+  tracking.currentQuestion = 0;
+  tracking.ra = 0;
+  tracking.ri = 0;
+  tracking.sn = 0;
+  tracking.nohoneybear = false;
+  tracking.ev = false;
+  tracking.amb = false;
+  tracking.date = "";
+  const resultsScreen = document.getElementById("quiz-end-results");
+  resultsScreen.style.display = "none";
+  startQuiz();
 }
 
 function toggleMusic() {

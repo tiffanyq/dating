@@ -33,7 +33,7 @@ const q_images = {
 		},
 	q9: {
 		img:"9.png",
-		alt: "A drawing of a video website where the search bar says '4 DATES WHY' and the videos displayed are 'Music to deter raccoons', 'Rating viral recipes with my chef dad', and 'My 5 to 9 before and after my 9 to 5'."
+		alt: "A drawing of a video website where the search bar says '4 DATES WHY' and the videos displayed are 'Relationship Talk: How did we know?', 'Trying 5000 ice cream flavors', 'My 5 to 9 before and after my 9 to 5', 'In my healing era', 'Music to deter raccoons', and 'Don't miss these 100 dating red flags'."
 		},
 	q10: {
 		img:"10.png",
@@ -98,12 +98,12 @@ You flip your phone over. They've finally texted you back.<br/><br/>\
 You hadn't even saved this number and yet you'd imagined the memories ahead. \
 This is really too bad. Still, you text back promptly, ending your reply with:",
 q2: "You won't let this stop your morning run. \
-One problem: you're out of clean clothes. What do you wear?",
+One problem: you're out of clean clothes. You'll have to look through your laundry pile. What do you do?",
 q3: "It's like, what, 7:15AM? Who could you possibly see at this time?<br/><br/>\
-You listen to the same song on repeat and let it carry you through the miles. The act of running right now feels:",
+You listen to the same song on repeat and let it carry you through the miles. Right now, you feel:",
 q4: "You run through the park where you first met fourth-date-person. \
 You wonder what you could've done differently. Was it something you said? Maybe it ended because:",
-q5: "That was a long run!! Your weeks-unwashed clothes are soaked. \
+q5: "That was a long run!! Your clothes are soaked. \
 As you air out your armpits, you see someone walking in your direction. \
 They're wearing a shirt for your favorite football team and so is the dog they're walking. Are they looking at you? <br/><br/>\
 Is this...the moment you've been waiting for?<br/><br/>\
@@ -123,8 +123,8 @@ You set a timer \
 and notice it's 2 AM right now in a city you've never been to. <br/><br/>\
 Fourth-date-person went on a work trip a couple weeks ago. \
 You'd added the city to your World Clock to know what time it was there. \
-It sounded like a hectic trip and you appreciated that they texted you every day anyway. \
-Based on the timestamps, they probably texted you back right before bed and first thing in the morning. \
+It sounded like a hectic trip. \
+Based on the timestamps, they probably texted you right before bed and first thing in the morning. \
 Did it mean they really liked you? Did it mean nothing to them? In any case, it was endearing.<br/><br/>\
 Anyway. It's over now. You:",
 q8: "You'll find love. \
@@ -133,8 +133,8 @@ And you may as well refresh your dating profile while this motivation is around.
 Actually...maybe let's just start with a single photo. You end up going with:",
 q9: "You update the photo and then swipe aimlessly. What <i>do</i> you want? <br/><br/>\
 You open your laptop and your photos app sends you a notification. <i>You have a new memory.</i> \
-It's your ex and your friends at fourth-date-person park. \
-Okay! Let's take our mind elsewhere. <br/><br/>\
+It's your ex and your friends at Fourth-date-person Park. \
+...Okay! Let's take our mind elsewhere. <br/><br/>\
 Your video recommendations have shifted toward dating advice. \
 You're not sure what this is doing to your psyche. The video drawing you in today is:",
 q10: "You watch the video on 2x speed and now your laundry is done! \
@@ -157,7 +157,7 @@ q11: {
 	But at least your clothes are clean and dry for now!"
 },
 q12: "You cross a street that shares its name with fourth-date-person. Was that street always there?<br/><br/>\
-Someone's wearing a jersey for your favorite team. You're reminded of morning run stranger and their dog. Is this a sign?<br/><br/>\
+Someone's wearing a jersey for your favorite team. You're reminded of the morning run stranger and their dog. Is this a sign?<br/><br/>\
 You order a coffee. Pouring in milk at the counter, you lock eyes with a bear-shaped honey bottle. \
 The bear stares at you, offering you the world.<br/><br/>\
 Is this...the love of your life?",
@@ -166,8 +166,7 @@ Before you visualize your wedding dance, your friend taps your shoulder and gree
 Your friend asks how dating has been going. It's been going! The hardest part right now is:",
 q14: "Your friend tells you, earnestly and lovingly, after hearing you met the last person through a dating app, \
 that you should try meeting people 'in real life' instead.<br/><br/>\
-Your friend pauses. <i>\"I just remembered. I have this friend, Plonk, who wants to get set up. I'm not sure if it's a romantic fit, \
-but I'll throw you two into a group chat if you're open to it?\"</i> You are, in fact, open to it.<br/><br/>\
+Your friend pauses. <i>\"I just remembered. I have this friend, Plonk, who wants to get set up. I'll throw you two into a group chat if you're open to it?\"</i> You are, in fact, open to it.<br/><br/>\
 Is this...the start of the rest of your life?",
 q15: "Still riding the momentum of 'putting yourself out there', \
 you decide to ask someone to get dinner before your confidence fades.<br/><br/>\
@@ -203,59 +202,65 @@ This thought brings peace before you sleep:"
 const q_choices = {
 	q1: {
 		choice0: {
-			text: "Hope you find what you're looking for!",
-			ra: 1,
+			text: "I totally understand! (You don't)",
+			ra: -1,
 			ri: 0,
-			sn: -1
+			sn: 0
 		},
 		choice1: {
 			text: "Sg! (That's the whole text)",
 			ra: -1,
 			ri: 0,
-			sn: 1
+			sn: 0
 		},
 		choice2: {
-			text: "Hope you have a great time on your backpacking trip and your mom's peonies thrive this spring!",
+			text: "Hope your backpacking trip is great, your mom’s peonies thrive this spring, and your best friend’s husky chihuahua mix has the best birthday known to dog! (You already removed three other specific details)",
 			ra: 1,
 			ri: 0,
-			sn: -1
+			sn: 0
 		},
 		choice3: {
 			text: "And happy new year! (It's October)",
-			ra: -1,
-			ri: 0,
-			sn: 1
-		}
-	},
-	q2: {
-		choice0: {
-			text: "Something you haven't washed in weeks.",
-			ra: 0,
+			ra: 1,
 			ri: 0,
 			sn: 0
 		}
 	},
+	q2: {
+		choice0: {
+			text: "Pick up whatever running clothes are at the top of the pile.",
+			ra: 0,
+			ri: 0,
+			sn: -1
+		},
+		choice1: {
+			text: "Rummage through the entire pile to find your favorite running outfit.",
+			ra: 0,
+			ri: 0,
+			sn: 1
+		}
+	},
 	q3: {
 		choice0: {
-			text: "Joyful. It's so nice being out here.",
+			text: "Peaceful. It’s so nice being out here.",
 			ra: 0,
 			ri: 1,
 			sn: -1
 		},
 		choice1: {
-			text: "Frantic. You notice you're running much faster than usual.",
+			text: "Turbulent. Why are you literally running away from your problems?",
 			ra: 0,
 			ri: 1,
 			sn: 1
 		},
 		choice2: {
-			text: "Turbulent. You are literally running away from your problems right now.",
+			text: "Blank. You’re taking a break from your thoughts.",
 			ra: 0,
 			ri: -1,
 			sn: 1
 		},
 		choice3: {
-			text: "Steady. It feels good to stick to your running plans no matter what.",
+			text: "Good about yourself. It feels good to stick to your routine no matter what.",
 			ra: 0,
 			ri: -1,
 			sn: -1
@@ -263,28 +268,28 @@ const q_choices = {
 	},
 	q4: {
 		choice0: {
-			text: "You talked too much about football.",
-			ra: -1,
+			text: "You didn't say the right lines.",
+			ra: 0,
 			ri: 0,
-			sn: 0
+			sn: 1
 		},
 		choice1: {
 			text: "You overshared about your fears.",
-			ra: 1,
+			ra: 0,
 			ri: 0,
-			sn: 0
+			sn: 1
 		},
 		choice2: {
 			text: "Your jokes kept flying past them.",
-			ra: -1,
+			ra: 0,
 			ri: 0,
-			sn: 0
+			sn: -1
 		},
 		choice3: {
-			text: "They were too intimidated by how amazing you are.",
-			ra: 1,
+			text: "They were intimidated by you.",
+			ra: 0,
 			ri: 0,
-			sn: 0
+			sn: -1
 		}
 	},
 	q5: {
@@ -297,7 +302,7 @@ const q_choices = {
 		},
 		choice1: {
 			id: 2,
-			text: "\"Is this the year?\"",
+			text: "\"Nice matching shirts! Think we're making the playoffs this year?\"",
 			ra: 1,
 			ri: 0,
 			sn: -1,
@@ -312,7 +317,7 @@ const q_choices = {
 		},
 		choice3: {
 			id: 4,
-			text: "Start running.",
+			text: "Start running again.",
 			ra: -1,
 			ri: 0,
 			sn: 1
@@ -328,13 +333,13 @@ const q_choices = {
 	},
 	q7: {
 		choice0: {
-			text: "Delete the city. Goodbye!",
+			text: "Delete the city—no need to leave this around.",
 			ra: 0,
 			ri: -1,
 			sn: 0
 		},
 		choice1: {
-			text: "Keep the city. Why not hold on to this souvenir?",
+			text: "Keep the city. Why not hold on to this memory?",
 			ra: 0,
 			ri: 1,
 			sn: 0
@@ -342,27 +347,27 @@ const q_choices = {
 	},
 	q8: {
 		choice0: {
-			text: "Some photo your friends agree is good.",
+			text: "Some photo your friends all agree is good.",
 			ra: 0,
 			ri: -1,
 			sn: 0
 		},
 		choice1: {
-			text: "A picture you like but haven't asked for feedback on yet.",
+			text: "A picture you like but no one else has given feedback on.",
 			ra: 0,
 			ri: 1,
 			sn: 0
 		},
 		choice2: {
-			text: "An action shot of you playing an obscure board game.",
+			text: "A photo that your friends universally agree is unflattering, but you like the photo.",
 			ra: 0,
-			ri: -1,
+			ri: 1,
 			sn: 0
 		},
 		choice3: {
 			text: "A selfie you take in this very moment.",
 			ra: 0,
-			ri: 1,
+			ri: -1,
 			sn: 0
 		}
 	},
@@ -374,7 +379,7 @@ const q_choices = {
 			sn: 0
 		},
 		choice1: {
-			text: "I'm just not into them. Can the feeling change?",
+			text: "20 Married Couples Answer: How did we know they were “the one”?",
 			ra: 0,
 			ri: 1,
 			sn: 0
@@ -449,27 +454,27 @@ const q_choices = {
 	q13: {
 		choice0: {
 			text: "How out of your control this process feels.",
-			ra: 0,
-			ri: -1,
-			sn: 1
+			ra: -1,
+			ri: 1,
+			sn: -1
 		},
 		choice1: {
 			text: "How much you worry about what's wrong with you.",
-			ra: 0,
+			ra: -1,
 			ri: 1,
 			sn: 1
 		},
 		choice2: {
 			text: "How much time this is taking from your life.",
-			ra: 0,
+			ra: 1,
 			ri: -1,
 			sn: -1
 		},
 		choice3: {
-			text: "How boring it is to have the same conversations over and over again.",
-			ra: 0,
-			ri: 1,
-			sn: -1
+			text: "Constantly wondering how you can optimize and improve your approach to dating.",
+			ra: 1,
+			ri: -1,
+			sn: 1
 		}
 	},
 	q14: {
@@ -511,7 +516,7 @@ const q_choices = {
 			text: "Are you free for dinner tonight? Do you have any places you've been meaning to try? If not I have a list!",
 			ra: 1,
 			ri: 0,
-			sn: 1
+			sn: -1
 		},
 		choice2: {
 			text: "Din at 6?",
@@ -577,13 +582,13 @@ const q_choices = {
 		},
 		plonk: {
 			choice0: {
-				text: "Okay, I guess...so how long have you lived in the city for?",
+				text: "It's been fine. So how long have you lived in the city for?",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice1: {
-				text: "So today I woke up to a text...",
+				text: "I don't know! It has its ups and downs.",
 				ra: 0,
 				ri: 0,
 				sn: 0
@@ -605,7 +610,7 @@ const q_choices = {
 				sn: 0
 			},
 			choice1: {
-				text: "Tell me absolutely everything",
+				text: "Tell me absolutely everything.",
 				ra: 0,
 				ri: 0,
 				sn: 0
@@ -631,7 +636,7 @@ const q_choices = {
 				sn: 0
 			},
 			choice2: {
-				text: "What went into the decision to make the move?",
+				text: "Walk me through your entire decision making process for this move.",
 				ra: 0,
 				ri: 0,
 				sn: 0
@@ -645,7 +650,7 @@ const q_choices = {
 				sn: 0
 			},
 			choice1: {
-				text: "I have some idea but I continually revisit this. How I think about it is...",
+				text: "I have a few potential paths in mind. The first one is...",
 				ra: 0,
 				ri: 0,
 				sn: 0
@@ -707,13 +712,13 @@ const q_choices = {
 				sn: 0
 			},
 			choice1: {
-				text: "Home, probably.",
+				text: "Good question! Let me think...",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice2: {
-				text: "Do I have unlimited time and money? Who's going with me?",
+				text: "Do I have unlimited time and money? Who's going with me? What do you mean by anywhere?",
 				ra: 0,
 				ri: 0,
 				sn: 0
@@ -784,7 +789,9 @@ const result_profiles = {
 		attr2: "Talks about their interests using a ton of jargon without realizing it",
 		attr3: "Fine with doing a year of long distance one week into making it official",
 		how: "You and someone else in a friend's wedding party are from the same hometown and now live in the same neighborhood. Coincidence or fate? 💘",
-		miss: "You hit it off with someone before boarding your flight but they live on a different continent. You figure this doesn't make logistical sense and don't exchange any contact info 😢"
+		miss: "You hit it off with someone before boarding your flight but they live on a different continent. You figure this doesn't make logistical sense and don't exchange any contact info 😢",
+		opposite: "Brown Square",
+		oppositeimg: "brownsquare.png"
 	},
 	rrn: {
 		when: "they make you laugh",
@@ -795,7 +802,9 @@ const result_profiles = {
 		attr2: "Doesn't order the thing on the menu if they don't know how to pronounce it",
 		attr3: "Knows exactly what the internet would think about their current romantic situation",
 		how: "Changing your dating app location while travelling actually works out 💘",
-		miss: "You and a friend have mutual romantic interest in each other. Neither of you realizes it and then one of you moves away 😢"
+		miss: "You and a friend have mutual romantic interest in each other. Neither of you realizes it and then one of you moves away 😢",
+		opposite: "Green Blob",
+		oppositeimg: "greenblob.png"
 	},
 	ris: {
 		when: "you want to talk about yourself",
@@ -806,7 +815,9 @@ const result_profiles = {
 		attr2: "So many subscriptions",
 		attr3: "Their friends are like  'you've been dating this person for 2 years and this is the first I'm hearing of them??'",
 		how: "You've known of this person for years but don't know them well. Finally, you both end up in the same car for a long drive and enjoy each other's company 💘",
-		miss: "Your friend's friend shows interest but it feels too close to home 😢"
+		miss: "Your friend's friend shows interest but it feels too close to home 😢",
+		opposite: "Red Trapezoid",
+		oppositeimg: "redtrapezoid.png"
 	},
 	rin: {
 		when: "you can't wait to tell them what happened today",
@@ -817,7 +828,9 @@ const result_profiles = {
 		attr2: "Looks out at the rolling hills and thinks everything is going to be ok",
 		attr3: "Gifts a croissant on the second date but feels bad for not checking for food allergies and says no pressure to actually eat this",
 		how: "The person next to you on the train is reading the same book you're reading right now. You take your copy out and read conspicuously. They notice and comment on this coincidence 💘",
-		miss: "You meet someone at an event. They don't text you and you think you may as well not initiate if they're not interested 😢"
+		miss: "You meet someone at an event. They don't text you and you think you may as well not initiate if they're not interested 😢",
+		opposite: "Purple Hexagon",
+		oppositeimg: "purplehexagon.png"
 	},
 	ars: {
 		when: "they get your jokes",
@@ -828,7 +841,9 @@ const result_profiles = {
 		attr2: "On principle, bed is either always made or never made",
 		attr3: "After meeting someone and feeling excited about the connection, spends the evening asking why 100 times until an acceptable logical answer is found",
 		how: "Someone DMs your hobby account. You meet up after a week of discussion about your shared interest 💘",
-		miss: "So relieved after solving a puzzle at the museum with a stranger that you don't stay longer to talk to them 😢"
+		miss: "So relieved after solving a puzzle at the museum with a stranger that you don't stay longer to talk to them 😢",
+		opposite: "Pink Triangle",
+		oppositeimg: "pinktriangle.png"
 	},
 	arn: {
 		when: "the world feels brighter",
@@ -839,7 +854,9 @@ const result_profiles = {
 		attr2: "Has the best finds when thrifting",
 		attr3: "Can't stop themselves from asking 'what is this' early on",
 		how: "Telling the person in front of you in line that you like their hair 💘",
-		miss: "You get caught up in telling a story. You don't notice the stranger wearing the same shirt as you from a tour your favorite artist did 8 years ago 😢"
+		miss: "You get caught up in telling a story. You don't notice the stranger wearing the same shirt as you from a tour your favorite artist did 8 years ago 😢",
+		opposite: "Yellow Star",
+		oppositeimg: "yellowstar.png"
 	},
 	ais: {
 		when: "the thoughts and ideas are endless",
@@ -850,7 +867,9 @@ const result_profiles = {
 		attr2: "Forgets friend's birthday until the end of the day even though they planned the (very elaborate) birthday party",
 		attr3: "Double texts without worrying about it",
 		how: "Texting a phone number someone left in a library book 💘",
-		miss: "Not meeting the love of your life at a cafe one fateful day. The day before, you committed to going caffeine-free 😢"
+		miss: "Not meeting the love of your life at a cafe one fateful day. The day before, you committed to going caffeine-free 😢",
+		opposite: "Orange Circle",
+		oppositeimg: "orangecircle.png"
 	},
 	ain: {
 		when: "you feel seen",
@@ -861,6 +880,8 @@ const result_profiles = {
 		attr2: "Too many keychains, not enough items to hang them on",
 		attr3: "Can't commit to a favorite color but willing to jump into a relationship as soon as something feels promising",
 		how: "Going on a hike with a friend's friends. One of them is especially attentive when you talk at length about your latest thoughts 💘",
-		miss: "Not talking to the person you make eye contact with at the grocery store 3 times in the same visit 😢"
+		miss: "Not talking to the person you make eye contact with at the grocery store 3 times in the same visit 😢",
+		opposite: "Blue Flower",
+		oppositeimg: "blueflower.png"
 	}
 }
