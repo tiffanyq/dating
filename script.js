@@ -31,8 +31,7 @@ window.addEventListener("load", function(event) {
   startButton.addEventListener('click', makeClickSound, false);
 
   // music and click sounds
-  music = new Audio('audio/music.mp3');
-  music.loop = true;
+  music = document.getElementById("background-audio");
   clickSound = new Audio('audio/click.mp3');
 });
 
@@ -204,6 +203,7 @@ function advanceToNextQuestion(e) {
     const c = document.getElementById("count-number");
     c.innerText = tracking.currentQuestion;
     changeQuestion(responseId);
+    changeMusic();
   }
   // scroll to top
   window.scrollTo(0,0);
@@ -246,6 +246,7 @@ function endQuiz() {
 }
 
 function computeResult() {
+  console.log("if you see this hello :) good to see u here");
   let resultString = "";
   if (tracking.ra < 0) {
     resultString += "r";
@@ -276,6 +277,7 @@ function restartQuiz() {
   tracking.date = "";
   const resultsScreen = document.getElementById("quiz-end-results");
   resultsScreen.style.display = "none";
+  music.src = 'audio/day.wav';
   startQuiz();
 }
 
@@ -304,7 +306,12 @@ function toggleMusic() {
 
 // changes music out during scene changes
 function changeMusic() {
-
+  if (tracking.currentQuestion === 12) {
+    music.src = 'audio/date.wav';
+  }
+  if (tracking.currentQuestion === 21) {
+    music.src = 'audio/end.wav';
+  }
 }
 
 function makeClickSound() {
