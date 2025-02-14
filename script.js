@@ -277,7 +277,7 @@ function restartQuiz() {
   tracking.date = "";
   const resultsScreen = document.getElementById("quiz-end-results");
   resultsScreen.style.display = "none";
-  music.src = 'audio/day.wav';
+  music.src = 'audio/day.mp3';
   startQuiz();
 }
 
@@ -307,10 +307,10 @@ function toggleMusic() {
 // changes music out during scene changes
 function changeMusic() {
   if (tracking.currentQuestion === 12) {
-    music.src = 'audio/date.wav';
+    music.src = 'audio/date.mp3';
   }
   if (tracking.currentQuestion === 21) {
-    music.src = 'audio/end.wav';
+    music.src = 'audio/end.mp3';
   }
 }
 
