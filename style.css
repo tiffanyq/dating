@@ -133,6 +133,7 @@ body {
   line-height: 24px;
   font-weight: 500;
   color: #003391;
+  user-select: none;
 }
 .didnt-meet-button {
   color:#727272;

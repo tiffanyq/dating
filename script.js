@@ -13,6 +13,7 @@ let tracking = {
 };
 
 let music;
+let musicOn = false;
 let clickSound;
 let buttonSoundsOn = false;
 
@@ -292,6 +293,7 @@ function toggleMusic() {
     label.classList.add("music-on");
     label.innerText = "turn music off";
     music.play();
+    musicOn = true;
   } else {
     mn.innerText = "music_off";
     mn.classList.remove("music-on");
@@ -299,6 +301,7 @@ function toggleMusic() {
     label.innerText = "turn music on";
     label.classList.remove("music-on");
     music.pause();
+    musicOn = false;
   }
   // also toggle button sounds
   buttonSoundsOn = !buttonSoundsOn;
@@ -308,9 +311,19 @@ function toggleMusic() {
 function changeMusic() {
   if (tracking.currentQuestion === 12) {
     music.src = 'audio/date.mp3';
+    if (musicOn) {
+      music.play();
+    } else {
+      music.pause();
+    }
   }
   if (tracking.currentQuestion === 21) {
     music.src = 'audio/end.mp3';
+    if (musicOn) {
+      music.play();
+    } else {
+      music.pause();
+    }
   }
 }
 
