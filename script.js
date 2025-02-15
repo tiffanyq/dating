@@ -279,6 +279,11 @@ function restartQuiz() {
   const resultsScreen = document.getElementById("quiz-end-results");
   resultsScreen.style.display = "none";
   music.src = 'audio/day.mp3';
+  if (musicOn) {
+    music.play();
+  } else {
+    music.pause();
+  }
   startQuiz();
 }
 
